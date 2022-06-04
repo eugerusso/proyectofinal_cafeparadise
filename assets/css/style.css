@@ -253,19 +253,6 @@ ul li {
   list-style: none;
 }
 
-nav {
-  background-color: #5D5885;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
 body {
   width: 100%;
   display: grid;
