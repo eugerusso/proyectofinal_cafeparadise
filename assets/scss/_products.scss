@@ -1,0 +1,30 @@
+.galeria{
+    display: flex;
+    flex-direction: column;
+    
+    .galeria__tomar{
+        
+        margin: 15px;
+    }
+    .galeria__comer{
+        
+        margin: 15px;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .galeria{
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-around;
+    }
+}

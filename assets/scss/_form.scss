@@ -1,0 +1,42 @@
+.contenedor__contacto{
+    display: flex;
+    flex-direction: column;
+    form{
+    
+        margin: 15px 5px;
+        padding: 5px;
+        label{
+            margin: 5px 0;
+            font-weight: 600;
+    
+        }
+        input{
+            margin: 5px;
+        }
+        textarea{
+            margin: 5px 5px;
+        }
+        .input__botones{
+            background-color: $colorAcento;
+            color: white;
+            width: 150px;
+            padding: 10px;
+            border: none;
+            
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contenedor__contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .input__botones:hover{
+            background-color: $colorSecundario;
+        }
+        
+    }
+
+}

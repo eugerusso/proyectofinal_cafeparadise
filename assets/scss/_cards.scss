@@ -1,0 +1,37 @@
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    .tarjeta__contenido{
+        display: flex;
+        flex-direction: column;        
+        align-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p{
+            padding: 5px;
+        }
+        img{        
+            width: 250px;
+            padding: 5px;
+            justify-self: center;
+            align-self: center; 
+        }
+        button{
+            @extend .tarjeta__boton;
+            width: 150px;            
+        }
+        
+    }
+}
+
+@media screen and (min-width:1024px){
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}

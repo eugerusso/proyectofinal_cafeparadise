@@ -1,0 +1,57 @@
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    img{        
+        width: 250px;
+        padding: 5px;
+        justify-self: center;
+        align-self: center; 
+        
+    }
+    h2{
+        font-weight: bold;
+    }
+    p{
+        padding: 0 auto;
+        span{
+            font-weight: bolder;
+        }
+    }
+}
+
+.variedades_cafe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    h3{
+        text-align: center;
+    }
+    img{
+        margin: 5px;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    article{
+        display: flex;
+        flex-flow: row wrap;
+        h2{
+            margin: 0 auto;
+        }
+        img{
+            width: 300px;
+        }
+    }
+    .variedades_cafe{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

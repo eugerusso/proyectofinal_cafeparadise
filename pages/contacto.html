@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SEO-->
+    <meta name="description" content="Dejanos tu mensaje que con gusto te responderemos lo más pronto posible">
+    <meta name="keywords" content="contacto, mensaje, reservar lugar">
+    
+    <!--Título de la página-->
+    <title>Document</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+    <!--Fuente Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Hojas de estilo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5D5885;">            
+            <div class="container-fluid">
+            <a class="navbar-brand" id="titulo" href="#">Café Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./sobrenosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="banner4">
+            <h1> Contacto</h1>
+        </div>
+    </header>
+
+    <!--Cuerpo principal-->
+    <main class="contenedor__contacto">
+        <form>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" placeholder="Ingresa tu nombre" type="text" required>
+            </div>
+            <div>
+                <label for="email">Correo electronico</label>
+                <input id="email" name="email" type="email" placeholder="Dejanos tu email" required>
+            </div>
+            <div>
+                <label for="genero">Género</label>
+                <label>Masculino</label>
+                <input type="radio" value="masculino" name="genero" id="genero">
+                <label>Femenino</label>
+                <input type="radio" value="femenino" name="genero" id="genero">
+                <label>No binario</label>
+                <input type="radio" value="no binario" name="genero" id="genero">
+            </div>
+            <div>
+                <label for="tema">Tema de tu mensaje</label>
+                <select name="tema" id="tema">
+                    <option value="#"></option>
+                    <option value="reservar lugar">Reservar lugar </option>
+                    <option value="consultas de otros eventos">Consultas de otros eventos</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Dejanos tu mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje" required></textarea>
+            </div>
+            <div>
+                <input class="input__botones" type="submit">
+                <input class="input__botones" type="reset">
+            </div>         
+        </form>
+
+        <!--Ubicación en el mapa-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167132768465!2d-58.38375908575437!3d-34.603738880459474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1654364078478!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <p>Copyright 2022, todos los derechos reservados</p>
+        <div>            
+            <a href="#titulo">Ir arriba</a>
+            <a href="mailto:cafeparadise@paradise.com">Contacto para empresa</a>
+        </div>
+        <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=0123456789"><img src="../assets/img/redes sociales/icono_whatsapp.png" alt="icono_whatsapp"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/img/redes sociales/icono_instagram.png" alt="icono_instagram"></a>
+            <a href="https://twitter.com/"><img src="../assets/img/redes sociales/icono_twitter.png" alt="icono_twitter"></a>
+            <a href="https://www.facebook.com/"><img src="../assets/img/redes sociales/icono_facebook.png" alt="icono_facebook"></a>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</body>
+</html>

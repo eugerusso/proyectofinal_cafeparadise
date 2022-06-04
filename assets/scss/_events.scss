@@ -1,0 +1,21 @@
+.proximos_eventos{
+    @extend article ;
+    button{
+        @extend .tarjeta__boton;
+        width: 200px;
+        
+    }
+}
+
+@media screen and (min-width:1024px){
+    .proximos_eventos{
+        display: flex;
+        flex-flow: row wrap;
+        h2{
+            margin: 0 auto;
+        }
+        img{
+            width: 300px;
+        }
+    }
+}
